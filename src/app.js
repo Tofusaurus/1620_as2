@@ -6,12 +6,12 @@ const notes = [
   }
 ]
 
-// run function when the plus button is clicked
+  // run function when the plus button is clicked
 document.querySelector("i.fa-circle-plus").addEventListener("click", function () {
-  // create a new note-taking area below plus button
-  // create textarea element
+    // create a new note-taking area below plus button
+    // create textarea element
   const textareaElemenetForNotes = document.createElement("textarea");
-  // add properties to textarea
+    // add properties to textarea
   textareaElemenetForNotes.cols = 30;
   textareaElemenetForNotes.rows = 7;
 
@@ -26,3 +26,10 @@ document.querySelector("i.fa-circle-plus").addEventListener("click", function ()
     // add properties to save button
   notesSaveBtn.className = "save_btn_notes";
   notesSaveBtn.textContent = "Save";
+
+    // add all the above tags to the write-note-area section
+  document.querySelector(".write-note-area").appendChild(textareaElemenetForNotes);
+  document.querySelector(".write-note-area").appendChild(notesSaveBtn);
+  document.querySelector(".write-note-area").appendChild(notesCancelBtn);
+  });
+  
