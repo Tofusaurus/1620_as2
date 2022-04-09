@@ -14,3 +14,10 @@ document.querySelector("i.fa-circle-plus").addEventListener("click", function ()
   // add properties to textarea
   textareaElemenetForNotes.cols = 30;
   textareaElemenetForNotes.rows = 7;
+
+    // create a Cancel button
+  const notesCancelBtn = document.createElement("button");
+    // add properties to Cancel button
+  notesCancelBtn.className = "cancel_btn_notes";
+  notesCancelBtn.textContent = "Cancel";
+  
