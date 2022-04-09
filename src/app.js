@@ -21,3 +21,8 @@ document.querySelector("i.fa-circle-plus").addEventListener("click", function ()
   notesCancelBtn.className = "cancel_btn_notes";
   notesCancelBtn.textContent = "Cancel";
   
+    // create a save button
+  const notesSaveBtn = document.createElement("button");
+    // add properties to save button
+  notesSaveBtn.className = "save_btn_notes";
+  notesSaveBtn.textContent = "Save";
