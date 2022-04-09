@@ -33,3 +33,13 @@ document.querySelector("i.fa-circle-plus").addEventListener("click", function ()
   document.querySelector(".write-note-area").appendChild(notesCancelBtn);
   });
   
+  // Remove note-taking area on click of cancel button
+window.addEventListener("click", function (event) {
+  // if button cancel clicked
+  if (event.target.classList.contains("cancel_btn_notes")) {
+    // Remove note-taking area elements
+    document.querySelector("textarea").remove();
+    document.querySelector(".cancel_btn_notes").remove();
+    document.querySelector(".save_btn_notes").remove();
+  }
+});
