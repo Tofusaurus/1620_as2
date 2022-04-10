@@ -76,7 +76,7 @@ function loadNotes(){
   document.querySelector(".notes-list").innerHTML = '';   
   // loop in array
   for(const i=0;i<notes.length;i++){
-     // create div with p for note title
+     // create div with Notetitle for note title
      const div = document.createElement("div");
      div.className = "cardNote";
      div.id = i
@@ -92,3 +92,17 @@ function loadNotes(){
   }
 }
 
+// on section list click
+function showNote(id){
+  document.querySelector(".read-note-area").innerHTML = '';
+  const div = document.createElement("div");
+  div.className = "cardNote note";
+  const body = document.createElement("body");
+  body.append(notes[id].title)
+  const Notetitle = document.createElement("Notetitle");
+  Notetitle.append(notes[id].noteBody)
+  div.appendChild(body)
+  div.appendChild(Notetitle)
+  
+  document.querySelector(".read-note-area").appendChild(div);
+}
