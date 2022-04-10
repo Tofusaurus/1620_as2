@@ -30,6 +30,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow: hidden;
+}
+
 .main-container {
   height: 100vh;
   display: flex;
@@ -61,8 +65,13 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  padding: 10px;
 }
 
+.note {
+  margin: 10px 40px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
 
 nav ul li {
   list-style-type: none;
@@ -82,13 +91,42 @@ nav a {
 }
 
 textarea,
+input,
 button {
   padding: 0.4rem;
   display: block;
   margin: 0.4rem;
 }
 
+textarea::placeholder,
+input::placeholder {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+}
+
 button {
   padding: 0.17rem 0.81rem;
   cursor: pointer;
+}
+
+/* update save */
+.cardNote {
+  margin: 10px;
+  border: 1px solid #acacac;
+  padding: 10px;
+  transition: .5s ease;
+  border-radius: 10px;
+}
+
+.cardNote:hover {
+  cursor: pointer;
+  background: #fff;
+}
+
+footer {
+  position: absolute;
+  background: #e9e8e8;
+  width: 100%;
+  padding: 10px;
+  bottom: 0;
 }
