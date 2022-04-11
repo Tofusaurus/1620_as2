@@ -38,6 +38,7 @@ body {
   height: 100vh;
   display: flex;
   font-family: "Quicksand", sans-serif;
+  background: #fffaf3;
 }
 
 .side-note-menu {
@@ -98,6 +99,7 @@ button {
   display: block;
   margin: 0.4rem;
   background-color: #f2e9e1;
+  color: #191724;
 }
 
 textarea::placeholder,
@@ -115,6 +117,7 @@ button {
 .cardNote {
   margin: 10px;
   border: 1px solid #6e6a86;
+  background: #fffaf3;
   padding: 10px;
   transition: .5s ease;
   border-radius: 10px;
@@ -122,8 +125,9 @@ button {
 
 .cardNote:hover {
   cursor: pointer;
-  background: #fffaf3;
+  background: #56949f;
 }
+
 
 footer {
   position: absolute;
