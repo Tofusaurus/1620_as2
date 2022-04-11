@@ -70,7 +70,7 @@ body {
 
 .note {
   margin: 10px 40px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 0 #191724
 }
 
 nav ul li {
@@ -112,7 +112,7 @@ button {
 /* update save */
 .cardNote {
   margin: 10px;
-  border: 1px solid #acacac;
+  border: 1px solid #6e6a86;
   padding: 10px;
   transition: .5s ease;
   border-radius: 10px;
@@ -120,12 +120,12 @@ button {
 
 .cardNote:hover {
   cursor: pointer;
-  background: #fff;
+  background: #fffaf3;
 }
 
 footer {
   position: absolute;
-  background: #e9e8e8;
+  background: #f2e9e1;
   width: 100%;
   padding: 10px;
   bottom: 0;

@@ -2,7 +2,7 @@ const notes = [
   // will be added from user
 ]
 
-// run function when the plus button is clicked
+  // run function when the plus button is clicked
 document.querySelector("i.fa-circle-plus").addEventListener("click", function () {
 
   // create a new note-taking area below plus button
@@ -75,17 +75,17 @@ function loadNotes(){
   // clear the section
   document.querySelector(".notes-list").innerHTML = '';   
   // loop in array
-  for(let i=0;i<notes.length;i++){
+  for(let loop=0;loop<notes.length;loop++){
      // create div with Notetitle for note title
      const div = document.createElement("div");
      div.className = "cardNote";
-     div.id = i
+     div.id = loop
      // add on click
      div.addEventListener('click', function(){
         showNote(this.id)
      })
      const Notetitle = document.createElement("Notetitle");
-     Notetitle.append(notes[i].title)
+     Notetitle.append(notes[loop].title)
      div.appendChild(Notetitle)
      // append div to section
      document.querySelector(".notes-list").appendChild(div);   
