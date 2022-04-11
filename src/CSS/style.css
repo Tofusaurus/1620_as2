@@ -96,6 +96,7 @@ button {
   padding: 0.4rem;
   display: block;
   margin: 0.4rem;
+  background-color: #f2e9e1;
 }
 
 textarea::placeholder,
@@ -129,4 +130,8 @@ footer {
   width: 100%;
   padding: 10px;
   bottom: 0;
+}
+
+p {
+  color: #31748f;
 }
