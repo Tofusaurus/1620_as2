@@ -75,7 +75,7 @@ function loadNotes(){
   // clear the section
   document.querySelector(".notes-list").innerHTML = '';   
   // loop in array
-  for(const i=0;i<notes.length;i++){
+  for(let i=0;i<notes.length;i++){
      // create div with Notetitle for note title
      const div = document.createElement("div");
      div.className = "cardNote";
